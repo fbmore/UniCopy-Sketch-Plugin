@@ -3,7 +3,7 @@
   "description": "Copy and Paste Layers, Properties, Content and more super fast.",
   "author": "Francesco Bertocci",
   "homepage": "https://www.github.com/fbmore/UniCopy-Sketch-Plugin/",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "identifier": "com.fbmore.magicCopier",
   "appcast": "https://raw.githubusercontent.com/fbmore/Unicopy-Sketch-Plugin/main/appcast.xml",
   "copyright": "Copyright © 2022 Francesco Bertocci. All rights reserved.",
