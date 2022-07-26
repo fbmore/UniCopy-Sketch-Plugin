@@ -2,7 +2,7 @@
   <channel>
     <title>UniCopy</title>
     <link>https://raw.githubusercontent.com/fbmore/UniCopy-Sketch-Plugin/main/appcast.xml</link>
-    <description>Copy and Paste Properties, Content and more super fast.</description>
+    <description>Copy and Paste Layers, Properties, Content and more super fast.</description>
     <language>en</language>
     <item>
       <title>Version 1.0.0</title>
