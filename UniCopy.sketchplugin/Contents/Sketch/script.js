@@ -1091,11 +1091,11 @@ function onRun(context) {
 
               paddedLayer.selected = true;
 
-              console.log("layer.index")
-              console.log(layer.index)
-              console.log("rectangle.index")
-              console.log(paddedLayer.index)
-              console.log("padded layer")
+              // console.log("layer.index")
+              // console.log(layer.index)
+              // console.log("rectangle.index")
+              // console.log(paddedLayer.index)
+              // console.log("padded layer")
 
               var layerResizingConstraint = layer.sketchObject.resizingConstraint();
               paddedLayer.sketchObject.setResizingConstraint(layerResizingConstraint);
@@ -1346,7 +1346,7 @@ function onRun(context) {
 
 
             ///
-            console.log(layer.sketchObject.resizingConstraint())
+            // console.log(layer.sketchObject.resizingConstraint())
 
             ui.message("🦄: Done! 👏 🚀");
 

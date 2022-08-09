@@ -1350,8 +1350,18 @@ function updateInput(value) {
 function updateSelectedLayersNames(value) {
 	// var svg = '<svg width="43px" height="43px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Artboard" transform="translate(-595.000000, -39.000000)" fill="#6236FF"><circle id="Oval" cx="616.5" cy="60.5" r="21.5"></circle></g></g></svg>'
 	// document.getElementById('myLayerNames').innerHTML = "Key Object:<br><br><b>"+ svg+"</b>";
+
+	var itemWidth = parseInt(value.split('<svg width="')[1].split('px" height=')[0])
+	var scaleFactor = parseInt(itemWidth) / 300;
+	if (itemWidth <= 152){
+		scaleFactor = parseInt(itemWidth) / 152;
+	}
+	
 	document.getElementById('myLayerNames').style='display:none'
-	document.getElementById('myLayerPreviewContainer').style='display:block'
+	var zoomValue = scaleFactor;
+	var zoomHTML = "zoom:"+zoomValue;
+	document.getElementById('myLayerPreviewContainer').style='display:block;' + zoomHTML;
+	// document.getElementById('myLayerPreviewContainer').style=zoomHTML;
 	document.getElementById('myLayerPreview').innerHTML = value;
 }
 
