@@ -933,6 +933,8 @@ function onRun(context) {
                   // selectionElementOverrides[o].affectedLayer.text  = sourceElementOverrides[o].affectedLayer.text;
   
                 }
+
+                layer.resizeWithSmartLayout();
               
               } 
 
@@ -976,6 +978,12 @@ function onRun(context) {
                 selectionElementOverrides[o].affectedLayer.text  = sourceElementOverrides[o].affectedLayer.text;
 
               }
+
+
+              console.log("resizeWithSmartLayout")
+
+              selectedLayer.resizeWithSmartLayout();
+
 
 
               //////
