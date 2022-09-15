@@ -178,6 +178,8 @@ function onRun(context) {
 
       var newValue = getLayerAsSVG(layerKeyObject);
 
+      printValue("SVG",newValue)
+
       return newValue;
     }
 
@@ -504,6 +506,9 @@ function onRun(context) {
               // var layerName = layerKeyObject.name
 
               var newValue = getLayerAsSVG(layerKeyObject);
+
+              printValue("SVG",newValue)
+
               // var newValue = '<svg width="477px" height="111px" viewBox="0 0 477 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Artboard" transform="translate(-84.000000, -67.000000)" fill="#6236FF"><rect id="Rectangle-purple" x="84" y="67" width="477" height="111"></rect></g></g></svg>';              
               //"test" 
               
@@ -1498,6 +1503,10 @@ function onRun(context) {
 //
 //   ui.message("🦄: You are selecting things! 👏 🚀");
 // }
+
+function printValue(label,value){
+  console.log(label + ":"+ value)
+}
 
 
 /// Adjust to fit if parent is a group
